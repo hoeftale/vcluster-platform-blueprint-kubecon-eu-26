@@ -12,6 +12,7 @@ controlPlane:
     enabled: true
 experimental:
   docker:
+    network: "vind-workshop"
     enabled: true
     nodes:
     - name: worker-1
