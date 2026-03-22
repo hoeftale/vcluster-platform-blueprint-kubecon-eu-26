@@ -126,7 +126,7 @@ additionalIngress:
   annotations:
     traefik.ingress.kubernetes.io/router.entrypoints: web
   hosts:
-    - host: controlplane-prod.172.17.0.254.trafik.me
+    - host: controlplane-prod.172.17.255.254.trafik.me
       paths:
         - path: /argocd
           pathType: Prefix
@@ -166,7 +166,7 @@ argo-cd:
       server.basehref: /argocd
       server.insecure: true
   global:
-    domain: controlplane-prod.172.17.0.254.trafik.me
+    domain: controlplane-prod.172.17.255.254.trafik.me
     revisionHistoryLimit: 5
   controller:
     metrics:
